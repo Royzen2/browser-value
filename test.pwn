@@ -7,7 +7,7 @@ public OnPlayerSpawn(playerid)
 }
 public OnGameModeInit(playerid)
 {
-  cef_subscribe(playerid, "browser:on_start", "Response");
+  cef_subscribe(playerid, "browser:go_starter", "Response");
 }
 public Response(player_id)
 {
