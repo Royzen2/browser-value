@@ -4,8 +4,17 @@
 <script>
   		            $(this).keydown(function(eventObject){
                 if (eventObject.which == 77) //буква M
-					
-                cef.emit('browser:go_starter');
+		{
+			if(res == 1)
+			{
+                		cef.emit('browser:go_starter');
+			}
+			else{ cef.hide(true); cef.set_focus(false); 
+			}
+		}
                     
             });
+	cef.on('browser:button_on', (res) =>{
+		count = res;
+	});
 </script>
