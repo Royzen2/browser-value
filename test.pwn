@@ -12,6 +12,6 @@ public OnGameModeInit(playerid)
 public Response(player_id)
 {
   cef_create_browser(player_id, browser_id, "ccылка на браузер", false, true);
-  cef_emit_event(player_id, "browser:button_on", CEFINT(0));
+  cef_emit_event(player_id, "browser:button_on", CEFINT(1));
   return true;
 }
